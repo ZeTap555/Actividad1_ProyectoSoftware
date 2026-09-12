@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto X - Cursos de Idiomas</title>
+    <link rel="stylesheet" href="estilosIA.css">
+</head>
+<body>
+
+    <!-- Barra de Navegación -->
+    <header class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Instituto X</h1>
+            <nav class="nav-links">
+                <a href="#catalogo">Cursos</a>
+                <a href="#nosotros">Quiénes Somos</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="container">
+
+        <!-- SECCIÓN: CATÁLOGO DE CURSOS -->
+        <section id="catalogo" class="section">
+            <h2>Catálogo de Cursos</h2>
+            <p class="section-desc">Selecciona una categoría para ver los cursos disponibles y descargar sus programas.</p>
+
+            <!-- Inputs de Radio ocultos para controlar la vista estática -->
+            <input type="radio" id="cat-todos" name="categoria" checked>
+            <input type="radio" id="cat-ingles" name="categoria">
+            <input type="radio" id="cat-frances" name="categoria">
+
+            <!-- Botones/Etiquetas de selección -->
+            <div class="filter-buttons">
+                <label for="cat-todos" class="filter-btn">Todos</label>
+                <label for="cat-ingles" class="filter-btn">Inglés</label>
+                <label for="cat-frances" class="filter-btn">Francés</label>
+            </div>
+
+            <!-- Contenedor de Cursos -->
+            <div class="cursos-grid">
+                
+                <!-- CURSOS DE INGLÉS -->
+                <div class="curso-box ingles">
+                    <h3>Inglés Básico (Nivel 1)</h3>
+                    <p>Introducción al idioma, gramática básica y conversación cotidiana.</p>
+                    <a href="programas/ingles_basico.pdf" class="btn-descarga" download>Descargar Programa</a>
+                </div>
+
+                <div class="curso-box ingles">
+                    <h3>Inglés Intermedio (Nivel 2)</h3>
+                    <p>Desarrollo de fluidez, comprensión auditiva y lectura avanzada.</p>
+                    <a href="programas/ingles_intermedio.pdf" class="btn-descarga" download>Descargar Programa</a>
+                </div>
+
+                <div class="curso-box ingles">
+                    <h3>Inglés de Negocios</h3>
+                    <p>Vocabulario corporativo, redacción de correos y presentaciones profesionales.</p>
+                    <a href="programas/ingles_negocios.pdf" class="btn-descarga" download>Descargar Programa</a>
+                </div>
+
+                <!-- CURSOS DE FRANCÉS -->
+                <div class="curso-box frances">
+                    <h3>Francés Inicial (A1)</h3>
+                    <p>Primeros pasos en la lengua francesa, fonética y saludos esenciales.</p>
+                    <a href="programas/frances_inicial.pdf" class="btn-descarga" download>Descargar Programa</a>
+                </div>
+
+                <div class="curso-box frances">
+                    <h3>Francés Conversacional (B1)</h3>
+                    <p>Mejora de la expresión oral, debates y expresiones idiomáticas comunes.</p>
+                    <a href="programas/frances_conversacional.pdf" class="btn-descarga" download>Descargar Programa</a>
+                </div>
+
+                <div class="curso-box frances">
+                    <h3>Cultura y Literatura Francesa</h3>
+                    <p>Análisis de obras clásicas y aproximación a la historia cultural de Francia.</p>
+                    <a href="programas/frances_cultura.pdf" class="btn-descarga" download>Descargar Programa</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECCIÓN: QUIÉNES SOMOS -->
+        <section id="nosotros" class="section">
+            <h2>Quiénes Somos</h2>
+            <div class="content-box">
+                <p>En el <strong>Instituto X</strong> nos dedicamos desde hace más de 15 años a la enseñanza de lenguas extranjeras con un enfoque comunicativo y dinámico. Nuestro equipo está conformado por profesores nativos y certificados internacionalmente, comprometidos con el éxito académico y profesional de cada uno de nuestros estudiantes.</p>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: CONTACTO -->
+        <section id="contacto" class="section">
+            <h2>Contacto</h2>
+            <div class="content-box">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required placeholder="tu@correo.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" required placeholder="¿En qué podemos ayudarte?"></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <p>&copy; 2026 Instituto X. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

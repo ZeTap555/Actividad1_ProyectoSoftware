@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Puente — Instituto de Idiomas</title>
+<meta name="description" content="Puente, instituto de idiomas: cursos de inglés y francés, información de contacto y programas descargables.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilosIA.css">
+</head>
+<body>
+
+<header class="encabezado">
+  <div class="franja-encabezado">
+    <a class="marca" href="#inicio">
+      <span class="marca-icono" aria-hidden="true">
+        <svg viewBox="0 0 48 32" width="34" height="24">
+          <path d="M2 26 C 2 12, 14 2, 24 2 C 34 2, 46 12, 46 26" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+          <line x1="2" y1="26" x2="2" y2="31" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+          <line x1="46" y1="26" x2="46" y2="31" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="marca-texto">Puente<span class="marca-sub">instituto de idiomas</span></span>
+    </a>
+
+    <input type="checkbox" id="interruptor-menu" class="interruptor-menu">
+    <label for="interruptor-menu" class="boton-menu" aria-label="Abrir menú de navegación">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav class="navegacion" aria-label="Navegación principal">
+      <a href="#quienes-somos">Quiénes somos</a>
+      <a href="#cursos">Catálogo de cursos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section id="inicio" class="hero">
+    <div class="hero-contenido">
+      <p class="hero-antetitulo">Inglés · Francés</p>
+      <h1>Un idioma nuevo empieza con un primer puente</h1>
+      <p class="hero-copete">
+        Puente es un instituto de idiomas dedicado a la enseñanza de inglés y francés,
+        con cursos organizados por nivel y objetivo, y programas descargables para
+        que sepas exactamente qué vas a aprender antes de inscribirte.
+      </p>
+      <div class="hero-acciones">
+        <a class="boton boton-primario" href="#cursos">Ver catálogo de cursos</a>
+        <a class="boton boton-secundario" href="#contacto">Consultar por un curso</a>
+      </div>
+    </div>
+    <div class="hero-curva" aria-hidden="true"></div>
+  </section>
+
+  <section id="quienes-somos" class="seccion">
+    <div class="contenedor contenedor-dos-columnas">
+      <div>
+        <p class="antetitulo">Quiénes somos</p>
+        <h2>El equipo detrás de Puente</h2>
+        <p>
+          Este sitio es mantenido por el equipo de comunicación y coordinación
+          académica de Puente, Instituto de Idiomas. Nos ocupamos de mantener
+          actualizado el catálogo de cursos, los programas descargables y los
+          canales de contacto con quienes se acercan a estudiar inglés o francés
+          con nosotros.
+        </p>
+        <p>
+          El cuerpo docente está formado por profesores de idiomas certificados,
+          con experiencia en la enseñanza tanto a adultos como a jóvenes, y con
+          seguimiento personalizado durante todo el curso.
+        </p>
+      </div>
+      <aside class="ficha-institucional">
+        <h3>Datos del instituto</h3>
+        <dl>
+          <div>
+            <dt>Nombre</dt>
+            <dd>Puente, Instituto de Idiomas</dd>
+          </div>
+          <div>
+            <dt>Idiomas dictados</dt>
+            <dd>Inglés y francés</dd>
+          </div>
+          <div>
+            <dt>Modalidad</dt>
+            <dd>Presencial y a distancia</dd>
+          </div>
+          <div>
+            <dt>Responsable del sitio</dt>
+            <dd>Área de Comunicación y Coordinación Académica</dd>
+          </div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <section id="cursos" class="seccion seccion-alterna">
+    <div class="contenedor">
+      <p class="antetitulo">Catálogo de cursos</p>
+      <h2>Elegí un idioma para ver sus cursos</h2>
+      <p class="texto-introductorio">
+        Seleccioná una categoría para mostrar los cursos disponibles en ese idioma.
+        Cada curso incluye un enlace para descargar su programa completo en PDF.
+      </p>
+
+      <div class="selector-cursos">
+        <input type="radio" name="categoria-curso" id="cat-ingles" class="radio-categoria" checked>
+        <input type="radio" name="categoria-curso" id="cat-frances" class="radio-categoria">
+
+        <div class="pestañas" role="tablist" aria-label="Categorías de cursos">
+          <label for="cat-ingles" class="pestaña">Inglés</label>
+          <label for="cat-frances" class="pestaña">Francés</label>
+        </div>
+
+        <div class="panel-cursos" id="panel-ingles">
+          <div class="grilla-cursos">
+
+            <article class="caja-curso">
+              <h3>Inglés General A1&ndash;A2</h3>
+              <p>Bases de gramática, vocabulario cotidiano y práctica oral para comenzar desde cero.</p>
+              <a class="enlace-descarga" href="programas/ingles-general.pdf" download>Descargar programa (PDF)</a>
+            </article>
+
+            <article class="caja-curso">
+              <h3>Inglés de Negocios</h3>
+              <p>Comunicación escrita y oral orientada a reuniones, correos y presentaciones laborales.</p>
+              <a class="enlace-descarga" href="programas/ingles-negocios.pdf" download>Descargar programa (PDF)</a>
+            </article>
+
+            <article class="caja-curso">
+              <h3>Preparación TOEFL</h3>
+              <p>Estrategias y práctica intensiva orientadas a rendir el examen internacional TOEFL.</p>
+              <a class="enlace-descarga" href="programas/ingles-toefl.pdf" download>Descargar programa (PDF)</a>
+            </article>
+
+            <article class="caja-curso">
+              <h3>Conversación Avanzada</h3>
+              <p>Espacio de práctica oral fluida para estudiantes de nivel intermedio-avanzado.</p>
+              <a class="enlace-descarga" href="programas/ingles-conversacion.pdf" download>Descargar programa (PDF)</a>
+            </article>
+
+          </div>
+        </div>
+
+        <div class="panel-cursos" id="panel-frances">
+          <div class="grilla-cursos">
+
+            <article class="caja-curso">
+              <h3>Francés General A1&ndash;A2</h3>
+              <p>Primeros pasos en francés: pronunciación, gramática básica y frases de uso diario.</p>
+              <a class="enlace-descarga" href="programas/frances-general.pdf" download>Descargar programa (PDF)</a>
+            </article>
+
+            <article class="caja-curso">
+              <h3>Francés para Viajeros</h3>
+              <p>Vocabulario y frases prácticas orientadas a moverse con comodidad en un viaje.</p>
+              <a class="enlace-descarga" href="programas/frances-viajeros.pdf" download>Descargar programa (PDF)</a>
+            </article>
+
+            <article class="caja-curso">
+              <h3>Preparación DELF</h3>
+              <p>Práctica de las cuatro destrezas evaluadas en los exámenes oficiales DELF.</p>
+              <a class="enlace-descarga" href="programas/frances-delf.pdf" download>Descargar programa (PDF)</a>
+            </article>
+
+            <article class="caja-curso">
+              <h3>Francés de Negocios</h3>
+              <p>Vocabulario corporativo y práctica de situaciones habituales en el ámbito laboral.</p>
+              <a class="enlace-descarga" href="programas/frances-negocios.pdf" download>Descargar programa (PDF)</a>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="seccion">
+    <div class="contenedor contenedor-dos-columnas">
+      <div>
+        <p class="antetitulo">Contacto</p>
+        <h2>Escribinos tu consulta</h2>
+        <p>
+          Completá el formulario y nos pondremos en contacto para contarte
+          más sobre horarios, modalidades y próximas fechas de inicio.
+        </p>
+
+        <form class="formulario-contacto" action="#" method="post">
+          <div class="campo">
+            <label for="nombre">Nombre y apellido</label>
+            <input type="text" id="nombre" name="nombre" required>
+          </div>
+
+          <div class="campo">
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo" required>
+          </div>
+
+          <div class="campo">
+            <label for="curso-interes">Curso de interés</label>
+            <select id="curso-interes" name="curso-interes">
+              <option value="">Preferí no especificar</option>
+              <optgroup label="Inglés">
+                <option value="ingles-general">Inglés General A1–A2</option>
+                <option value="ingles-negocios">Inglés de Negocios</option>
+                <option value="ingles-toefl">Preparación TOEFL</option>
+                <option value="ingles-conversacion">Conversación Avanzada</option>
+              </optgroup>
+              <optgroup label="Francés">
+                <option value="frances-general">Francés General A1–A2</option>
+                <option value="frances-viajeros">Francés para Viajeros</option>
+                <option value="frances-delf">Preparación DELF</option>
+                <option value="frances-negocios">Francés de Negocios</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+          </div>
+
+          <button type="submit" class="boton boton-primario">Enviar consulta</button>
+        </form>
+      </div>
+
+      <aside class="ficha-institucional">
+        <h3>Otros medios de contacto</h3>
+        <dl>
+          <div>
+            <dt>Correo</dt>
+            <dd>contacto@puenteidiomas.example</dd>
+          </div>
+          <div>
+            <dt>Teléfono</dt>
+            <dd>+54 221 000-0000</dd>
+          </div>
+          <div>
+            <dt>Horario de atención</dt>
+            <dd>Lunes a viernes, 9 a 18 h</dd>
+          </div>
+          <div>
+            <dt>Sede</dt>
+            <dd>La Plata, Buenos Aires</dd>
+          </div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pie">
+  <div class="contenedor pie-contenido">
+    <p>© 2026 Puente, Instituto de Idiomas.</p>
+    <nav aria-label="Enlaces del pie de página">
+      <a href="#quienes-somos">Quiénes somos</a>
+      <a href="#cursos">Cursos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
